@@ -2,7 +2,7 @@ package org.example
 
 
 
-object Main extends String {
+object Main {
   type Strategy[T <: AnyVal] = (T, T) => T
 
 
@@ -19,7 +19,6 @@ object Main extends String {
     implicit val addStrings: Strategy[Float] = _ + _
 
     new Context[Int]().use(2, 3)
-    new Con
 
   }
 }
