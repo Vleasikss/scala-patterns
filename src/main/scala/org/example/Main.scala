@@ -2,15 +2,15 @@ package org.example
 
 
 trait Animal {
-  def doSound():String
+  def getSound:String
 }
 
 private class Dog extends Animal {
-  override def doSound(): String = "BARK"
+  override def getSound: String = "BARK"
 }
 
 private class Cat extends Animal {
-  override def doSound(): String = "MEOW"
+  override def getSound: String = "MEOW"
 }
 
 object Animal {
@@ -29,8 +29,8 @@ object Main {
     val cat: Animal = Animal(Animal.CAT)
     val dog: Animal = Animal(Animal.DOG)
 
-    println(cat.doSound())
-    println(dog.doSound())
+    println(cat.getSound)
+    println(dog.getSound)
 
   }
 }
