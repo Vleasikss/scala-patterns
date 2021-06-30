@@ -1,5 +1,8 @@
 package org.example
 
+/**
+ * Example of Partial function execution
+ */
 object Main {
 
   case class Event(source: String)
