@@ -11,8 +11,8 @@ object Main {
 
   def main(args: Array[String]): Unit = {
     // (val1, val2) => val1 + val2
-    implicit val add: Strategy = _ + _
-    implicit val multiply: Strategy = _ * _
+    val add: Strategy = _ + _
+    val multiply: Strategy = _ * _
 
     new Context(multiply).use(2, 3)
   }
